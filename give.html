@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Give Online - St. Simon Baptist Church</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .giving-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .giving-methods, .giving-form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .method-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .method-card:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .method-icon {
+            font-size: 2rem;
+            color: #e74c3c;
+            margin-right: 1.5rem;
+            width: 60px;
+            text-align: center;
+        }
+        
+        .method-info h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        .giving-faq {
+            margin-top: 3rem;
+            background-color: #f1f1f1;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        
+        .faq-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .faq-item h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .giving-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>St. Simon Baptist Church</h1>
+        <p>Welcome to the church where Christ is the head</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="ministries.html">Ministries</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <main>
+        <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/giving.jpg');">
+            <h1>Give Online</h1>
+            <p>Partner with us in ministry through your faithful giving</p>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">Ways to Give</h2>
+            <div class="welcome-message">
+                <p>"Each one must give as he has decided in his heart, not reluctantly or under compulsion, for God loves a cheerful giver." - 2 Corinthians 9:7</p>
+                <p>Your generous gifts enable us to carry out our mission of sharing the Gospel and serving our community.</p>
+            </div>
+            
+            <div class="giving-container">
+                <div class="giving-methods">
+                    <h3>Giving Methods</h3>
+                    
+                    <div class="method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <div class="method-info">
+                            <h3>Online Giving</h3>
+                            <p>Give securely through our online portal using credit/debit card or bank account.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="method-info">
+                            <h3>Text Giving</h3>
+                            <p>Text "GIVE" to 0775484778 and follow the instructions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="method-info">
+                            <h3>Mail a Check</h3>
+                            <p>Send your gift to: St. Simon Baptist Church, Horton Avenue, Capitol Bye Pass</p>
+                        </div>
+                    </div>
+                    
+                    <div class="method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-church"></i>
+                        </div>
+                        <div class="method-info">
+                            <h3>In-Person</h3>
+                            <p>Place your gift in the offering during any of our worship services.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="giving-form">
+                    <h3>Online Giving Form</h3>
+                    <form id="donation-form">
+                        <div class="form-group">
+                            <label for="amount">Donation Amount ($)</label>
+                            <input type="number" id="amount" name="amount" min="1" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="fund">Select Fund</label>
+                            <select id="fund" name="fund" required>
+                                <option value="">-- Select a Fund --</option>
+                                <option value="general">General Fund</option>
+                                <option value="missions">Missions</option>
+                                <option value="building">Building Fund</option>
+                                <option value="benevolence">Benevolence Fund</option>
+                                <option value="youth">Youth Ministry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" name="first-name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="payment-method">Payment Method</label>
+                            <select id="payment-method" name="payment-method" required>
+                                <option value="">-- Select Payment Method --</option>
+                                <option value="credit">Credit Card</option>
+                                <option value="debit">Debit Card</option>
+                                <option value="bank">Bank Account</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="cta-button" style="width: 100%;">Continue to Payment</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="giving-faq">
+                <h3 class="section-title">Giving FAQs</h3>
+                
+                <div class="faq-item">
+                    <h3>Is online giving secure?</h3>
+                    <p>Yes! We use industry-standard encryption technology to protect your information. Your financial data is never stored on our servers.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Will I receive a giving statement?</h3>
+                    <p>Yes, we provide annual giving statements for tax purposes. You can also log in to your account at any time to view your giving history.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Can I set up recurring giving?</h3>
+                    <p>Absolutely. During the giving process, you'll have the option to make your gift recurring (weekly, bi-weekly, or monthly).</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>How much should I give?</h3>
+                    <p>The Bible encourages us to give cheerfully and sacrificially. Many members follow the biblical principle of tithing (giving 10%), but the amount is between you and God.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="/belief.html">Our Beliefs</a>
+                <a href="/leadershp.html">Leadership</a>
+                <a href="/give.html">Give Online</a>
+                <a href="/contact.html">Contact Us</a>
+            </div>
+            <div class="footer-info">
+                <p>Horton Avenue, Capitol Bye Pass</p>
+                <p>Phone: 231-775-484778 | Email: info@stsimonbaptist.org</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; <span id="current-year"></span> St. Simon Baptist Church. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

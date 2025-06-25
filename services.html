@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - St. Simon Baptist Church</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Additional styles specific to Services page */
+        .service-schedule {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .schedule-card {
+            background-color: #f9f9f9;
+            border-left: 4px solid #e74c3c;
+            padding: 1.5rem;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .schedule-card h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .schedule-time {
+            color: #e74c3c;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .sermon-archive {
+            margin-top: 3rem;
+        }
+        
+        .sermon-list {
+            margin-top: 2rem;
+        }
+        
+        .sermon-item {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+        }
+        
+        .sermon-img {
+            width: 100%;
+            max-width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .sermon-content {
+            flex: 1;
+            padding: 1.5rem;
+            min-width: 300px;
+        }
+        
+        .sermon-content h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .sermon-meta {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .sermon-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .sermon-actions a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .special-services {
+            background-color: #f1f1f1;
+            padding: 3rem 2rem;
+            margin-top: 3rem;
+            border-radius: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .sermon-item {
+                flex-direction: column;
+            }
+            
+            .sermon-img {
+                max-width: 100%;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>St. Simon Baptist Church</h1>
+        <p>Welcome to the church where Christ is the head</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="ministries.html">Ministries</a>
+        <a href="event.html">Events</a>
+        <a href="contact.html">Contact</a>
+        <a href="/membership.html">Membership Class</a>
+    </nav>
+    
+    <main>
+        <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/worship-service.jpg');">
+            <h1>Worship With Us</h1>
+            <p>Join our vibrant worship services and experience God's presence</p>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">Weekly Services</h2>
+            <div class="welcome-message">
+                <p>We invite you to join us for powerful worship and biblical teaching. Our services are designed to help you connect with God and grow in your faith.</p>
+            </div>
+            
+            <div class="service-schedule">
+                <h3>Regular Service Schedule</h3>
+                <div class="schedule-grid">
+                    <div class="schedule-card">
+                        <h3>Sunday School</h3>
+                        <p class="schedule-time">9:00AM - 10:15AM</p>
+                        <p>A more intimate service with deeper Bible teaching and opportunities for prayer ministry.</p>
+                    </div>
+                    
+                    <div class="schedule-card">
+                        <h3>Prayer Time</h3>
+                        <p class="schedule-time">10:15 AM - 10:30 AM</p>
+                        <p>Prayer meeting for all ages.</p>
+                    </div>
+                    
+                    <div class="schedule-card">
+                        <h3>Divine Worship Service</h3>
+                        <p class="schedule-time">10:30 AM - 12:30 PM</p>
+                        <p>Our main worship service with choir, prayer, and biblical preaching. Nursery and children's church available.</p>
+                    </div>
+            </div>
+            
+            <div class="special-services">
+                <h3>Special Services</h3>
+                <div class="schedule-grid">
+                    <div class="schedule-card">
+                        <h3>Communion Service</h3>
+                        <p class="schedule-time">First Sunday of each month</p>
+                        <p>We observe the Lord's Supper together as a church family during our morning service.</p>
+                    </div>
+                    
+                    <div class="schedule-card">
+                        <h3>Baptism Service</h3>
+                        <p class="schedule-time">Quarterly</p>
+                        <p>Celebration of new believers following Christ in believer's baptism by immersion.</p>
+                    </div>
+                    
+                    <div class="schedule-card">
+                        <h3>Encounter Service</h3>
+                        <p class="schedule-time">First Week of every month</p>
+                        <p>Week of prayer and fasting to seek God's direction for the new month.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section" style="background-color: #f1f1f1;">
+            <h2 class="section-title">What to Expect</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="/images/place_holder.jpg" alt="Welcoming Atmosphere">
+                    <div class="card-content">
+                        <h3>A Warm Welcome</h3>
+                        <p>From the moment you arrive, you'll be greeted with smiles and hospitality. We have friendly greeters ready to help you find your way.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="images/place_holder.jpg" alt="Worship Music">
+                    <div class="card-content">
+                        <h3>Spirit-Filled Worship</h3>
+                        <p>Our services feature vibrant worship blending traditional hymns and contemporary praise songs led by our choir and worship team.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="/images/place_holder.jpg" alt="Bible Preaching">
+                    <div class="card-content">
+                        <h3>Biblical Preaching</h3>
+                        <p>Each service includes practical, Bible-based teaching that applies God's Word to everyday life.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section sermon-archive">
+            <h2 class="section-title">Recent Sermons</h2>
+            <div class="welcome-message">
+                <p>Can't join us in person? Listen to recent messages from our services.</p>
+            </div>
+            
+            <div class="sermon-list">
+                <div class="sermon-item">
+                    <img src="images/place_holder.jpg" alt="Sermon thumbnail" class="sermon-img">
+                    <div class="sermon-content">
+                        <h3>Walking in Faith</h3>
+                        <p class="sermon-meta">June 12, 2025 | Hebrews 11:1-6 | Pastor Michael Williams</p>
+                        <p>In this message, we explore what it truly means to walk by faith and not by sight in our daily lives.</p>
+                        <div class="sermon-actions">
+                            <a href="#"><i class="fas fa-headphones"></i> Listen</a>
+                            <a href="#"><i class="fas fa-download"></i> Download</a>
+                            <a href="#"><i class="fas fa-book"></i> Notes</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sermon-item">
+                    <img src="/images/place_holder.jpg" alt="Sermon thumbnail" class="sermon-img">
+                    <div class="sermon-content">
+                        <h3>The Power of Prayer</h3>
+                        <p class="sermon-meta">June 5, 2025 | James 5:13-18 | Pastor Sarah Johnson</p>
+                        <p>Discover how prayer can transform your life and circumstances as we examine biblical principles of effective prayer.</p>
+                        <div class="sermon-actions">
+                            <a href="#"><i class="fas fa-headphones"></i> Listen</a>
+                            <a href="#"><i class="fas fa-download"></i> Download</a>
+                            <a href="#"><i class="fas fa-book"></i> Notes</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sermon-item">
+                    <img src="images/place_holder.jpg" alt="Sermon thumbnail" class="sermon-img">
+                    <div class="sermon-content">
+                        <h3>Living as Light</h3>
+                        <p class="sermon-meta">May 29, 2025 | Matthew 5:14-16 | Pastor David Brown</p>
+                        <p>What does it mean to be the light of the world? This message challenges us to shine brightly in our communities.</p>
+                        <div class="sermon-actions">
+                            <a href="#"><i class="fas fa-headphones"></i> Listen</a>
+                            <a href="#"><i class="fas fa-download"></i> Download</a>
+                            <a href="#"><i class="fas fa-book"></i> Notes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="sermons.html" class="cta-button">View All Sermons</a>
+            </div>
+        </section>
+        
+        <section class="section" style="background-color: #2c3e50; color: white;">
+            <h2 class="section-title" style="color: white;">Join Us This Sunday</h2>
+            <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">We'd love to welcome you to our next service. Come as you are and experience the love of Christ in our church family.</p>
+                <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                    <a href="contact.html" class="cta-button">Get Directions</a>
+                    <a href="contact.html" class="cta-button" style="background-color: transparent; border: 2px solid white;">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="beliefs.html">Our Beliefs</a>
+                <a href="leadershp.html">Leadership</a>
+                <a href="/give.html">Give Online</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="/membership.html">Membership Class</a>
+            </div>
+            <div class="footer-info">
+                <p>Horton Avenue, Capitol Bye Pass</p>
+                <p>Phone: 23- | Email: info@stsimonbaptist.org</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; <span id="current-year"></span> St. Simon Baptist Church. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="/Javascript/main.js"></script>
+</body>
+</html>

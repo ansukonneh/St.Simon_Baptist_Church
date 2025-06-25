@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - St. Simon Baptist Church</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Additional styles specific to About page */
+        .history-timeline {
+            margin: 2rem 0;
+            position: relative;
+            padding-left: 50px;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-left: 3px solid #e74c3c;
+            padding-left: 30px;
+        }
+        
+        .timeline-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .timeline-year {
+            position: absolute;
+            left: -50px;
+            top: 0;
+            background-color: #e74c3c;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .timeline-content h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .beliefs-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .belief-card {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .belief-card h3 {
+            color: #e74c3c;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #f1f1f1;
+            padding-bottom: 0.5rem;
+        }
+        
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .leader-card {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .leader-img {
+            width: 100%;
+            height: 370px;
+            object-fit: cover;
+        }
+        
+        .leader-info {
+            padding: 1.5rem;
+        }
+        
+        .leader-info h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .leader-position {
+            color: #e74c3c;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>St. Simon Baptist Church</h1>
+        <p>Welcome to the church where Christ is the head</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="ministries.html">Ministries</a>
+        <a href="event.html">Events</a>
+        <a href="contact.html">Contact</a>
+         <a href="/membership.html">Membership Class</a>
+    </nav>
+    
+    <main>
+        <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/church-history.jpg');">
+            <h1>Our Story & Beliefs</h1>
+            <p>At Saint Simon we are a Family of Faith... Bound together in Love and strenghtened through Fellowship.</p>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">Our History</h2>
+            <div class="welcome-message">
+                <p>For over 100 years, St. Simon Baptist Church has been a beacon of hope and faith in our community. What began as a small gathering of believers has grown into a vibrant congregation that continues to impact lives through the power of the Gospel.</p>
+            </div>
+            
+            <div class="history-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">1923</div>
+                    <div class="timeline-content">
+                        <h3>Church Founding</h3>
+                        <p>St. Simon Baptist Church was established by Rev. Dr. Daniel R. Horton and 12 founding members in a small storefront on Horton Avenue.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1965</div>
+                    <div class="timeline-content">
+                        <h3>First Building</h3>
+                        <p>The congregation moved into its first dedicated church building, which seated 150 worshippers.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1988</div>
+                    <div class="timeline-content">
+                        <h3>Expansion</h3>
+                        <p>Under the leadership of Pastor S. Rufus W. Reeves, the church expanded with new educational wings and a larger sanctuary.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2005</div>
+                    <div class="timeline-content">
+                        <h3>Community Center</h3>
+                        <p>The church opened its community outreach center, offering food programs, job training, and youth activities.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">Present</div>
+                    <div class="timeline-content">
+                        <h3>Continuing Legacy</h3>
+                        <p>Today, under the leadership of Rev. Rufus Reeves, we continue to serve our community while staying true to our biblical foundations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section" style="background-color: #f1f1f1;">
+            <h2 class="section-title">Our Beliefs</h2>
+            <div class="welcome-message">
+                <p>We hold to the historic Christian faith as revealed in the Bible. These core beliefs guide everything we do as a church family.</p>
+            </div>
+            
+            <div class="beliefs-container">
+                <div class="belief-card">
+                    <h3>The Bible</h3>
+                    <p>We believe the Bible is the inspired, infallible Word of God and the final authority for faith and life.</p>
+                </div>
+                
+                <div class="belief-card">
+                    <h3>God</h3>
+                    <p>We believe in one God, eternally existing in three persons: Father, Son, and Holy Spirit.</p>
+                </div>
+                
+                <div class="belief-card">
+                    <h3>Jesus Christ</h3>
+                    <p>We believe in the deity of Christ, His virgin birth, sinless life, atoning death, bodily resurrection, and imminent return.</p>
+                </div>
+                
+                <div class="belief-card">
+                    <h3>Salvation</h3>
+                    <p>We believe salvation is by grace through faith in Christ alone, not by works.</p>
+                </div>
+                
+                <div class="belief-card">
+                    <h3>The Church</h3>
+                    <p>We believe the Church is the body of Christ, called to worship, fellowship, and make disciples.</p>
+                </div>
+                
+                <div class="belief-card">
+                    <h3>Baptism</h3>
+                    <p>We believe in believer's baptism by immersion as an act of obedience and public testimony.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">Our Leadership</h2>
+            <div class="welcome-message">
+                <p>God has blessed us with dedicated leaders who shepherd our congregation with wisdom and love.</p>
+            </div>
+            
+            <div class="leadership-grid">
+                <div class="leader-card">
+                    <img src="/images/senior pastor.jpg" alt="S. Rufus W. Reeves" class="leader-img">
+                    <div class="leader-info">
+                        <h3>Rev. S. Rufus W. Reeves</h3>
+                        <p class="leader-position">Senior Pastor</p>
+                        <p>Pastor Reeves has served at St. Simon since 2010, bringing dynamic preaching and a heart for community transformation.</p>
+                    </div>
+                </div>
+                
+                <div class="leader-card">
+                    <img src="/images/deacon char.jpg" alt="Deacon Chairman, Youboty" class="leader-img">
+                    <div class="leader-info">
+                        <h3>Deacon Fitzgerald T. M. Blago</h3>
+                        <p class="leader-position">CHAIRMAN, DEACON MINISTRY</p>
+                        <p>Deacon Blago oversees our discipleship programs and Deacon's ministries with passion and dedication.</p>
+                    </div>
+                </div>
+                
+                <div class="leader-card">
+                    <img src="/images/place_holder.jpg" alt="Board of TRUSTEES" class="leader-img">
+                    <div class="leader-info">
+                        <h3>Deacon John S. Youboty</h3>
+                        <p class="leader-position">CHAIRMAN, BOARD OF TRUSTEES</p>
+                        <p>Deacon Youboty leads our vibrant youth ministry, helping the next generation grow in their faith.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="service-times" style="margin-top: 3rem;">
+                <h3>Meet Our Deacons & Ministry Leaders</h3>
+                <p>We have a dedicated team of deacons and ministry leaders who serve our church family.</p>
+                <a href="leadership.html" class="cta-button">View Full Leadership Team</a>
+            </div>
+        </section>
+        
+        <section class="section" style="background-color: #f1f1f1;">
+            <h2 class="section-title">Our Mission & Vision</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Our Mission</h3>
+                        <p>Making Disciple that will Disciple Others.</p>
+                        <p><em>"Go therefore and make disciples..." - Matthew 28:19</em></p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Our Vision</h3>
+                        <p>Transforming Communities and Empowering Lives through Mission Opportunities</p>
+                        <p><em>"You will be my witnesses..." - Acts 1:8</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+            <section class="section">
+            <h2 class="section-title">Church Membership</h2>
+            <div class="welcome-message">
+                <p>At St. Simon Baptist Church, we believe membership is more than just a name on a list - it's a commitment to grow together as the body of Christ. We invite you to join our church family as we pursue God's purpose together.</p>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <img src="/images/place_holder.jpg" alt="Membership Class">
+                    <div class="card-content">
+                        <h3>Becoming a Member</h3>
+                        <p>We offer quarterly membership classes that cover our church history, beliefs, and expectations. These classes are required for all prospective members.</p>
+                        <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                            <li style="margin-bottom: 0.5rem;">Attend a membership class</li>
+                            <li style="margin-bottom: 0.5rem;">Share your testimony of faith</li>
+                            <li style="margin-bottom: 0.5rem;">Be baptized by immersion (if not previously baptized)</li>
+                            <li>Complete membership application</li>
+                        </ul>
+                        <a href="membership.html" class="cta-button">Upcoming Class Dates</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="/images/place_holder.jpg" alt="Church Members">
+                    <div class="card-content">
+                        <h3>Member Responsibilities</h3>
+                        <p>As members of St. Simon Baptist Church, we commit to:</p>
+                        <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                            <li style="margin-bottom: 0.5rem;">Faithfully attend worship services</li>
+                            <li style="margin-bottom: 0.5rem;">Grow spiritually through Bible study and prayer</li>
+                            <li style="margin-bottom: 0.5rem;">Serve in a ministry according to your gifts</li>
+                            <li style="margin-bottom: 0.5rem;">Give regularly and cheerfully</li>
+                            <li style="margin-bottom: 0.5rem;">Live according to biblical principles</li>
+                            <li>Support the church's mission and leadership</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="/images/place_holder.jpg" alt="New Members">
+                    <div class="card-content">
+                        <h3>Member Benefits</h3>
+                        <p>As part of our church family, you'll receive:</p>
+                        <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                            <li style="margin-bottom: 0.5rem;">Pastoral care and spiritual guidance</li>
+                            <li style="margin-bottom: 0.5rem;">Opportunities to serve and use your gifts</li>
+                            <li style="margin-bottom: 0.5rem;">Voting privileges in church matters</li>
+                            <li style="margin-bottom: 0.5rem;">Access to member-only events and resources</li>
+                            <li>The support of a spiritual family</li>
+                        </ul>
+                        <a href="contact.html" class="cta-button">Questions About Membership?</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="service-times" style="margin-top: 2rem;">
+                <h3>Ready to Join Our Church Family?</h3>
+                <p>Our next membership class begins on October 15, 2025. Childcare and light refreshments will be provided.</p>
+                <a href="membership.html" class="cta-button">Register for Membership Class</a>
+            </div>
+        </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/about.html">About Us</a>
+                <a href="/belief.html">Our Beliefs</a>
+                <a href="/leadershp.html">Leadership</a>
+                <a href="/give.html">Give Online</a>
+                <a href="/contact.html">Contact Us</a>
+                <a href="/membership.html">Membership Class</a>
+            </div>
+            <div class="footer-info">
+                <p>Horton Avenue, Capitol Bye Pass</p>
+                <p>Phone: 231-775-484778 | Email: info@stsimonbaptist.org</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; <span id="current-year"></span> St. Simon Baptist Church. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="/Javascript/main.js"></script>
+</body>
+</html>

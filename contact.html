@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - St. Simon Baptist Church</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Additional styles specific to Contact page */
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 2rem;
+        }
+        
+        .contact-info h3 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #f1f1f1;
+            padding-bottom: 0.5rem;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-icon {
+            background-color: #e74c3c;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .contact-details h4 {
+            color: #2c3e50;
+            margin-bottom: 0.3rem;
+        }
+        
+        .contact-details p, .contact-details a {
+            color: #666;
+            text-decoration: none;
+        }
+        
+        .contact-details a:hover {
+            color: #e74c3c;
+            text-decoration: underline;
+        }
+        
+        .office-hours {
+            margin-top: 2rem;
+        }
+        
+        .office-hours table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .office-hours tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .office-hours td {
+            padding: 0.5rem;
+            border-bottom: 1px solid #f1f1f1;
+        }
+        
+        .office-hours td:first-child {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 2rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: inherit;
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+        }
+        
+        .form-submit {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .form-submit:hover {
+            background-color: #c0392b;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .church-map {
+            margin-top: 3rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            height: 400px;
+        }
+        
+        .church-map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .staff-contact {
+            margin-top: 3rem;
+        }
+        
+        .staff-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .staff-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .staff-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+            border: 3px solid #e74c3c;
+        }
+        
+        .staff-card h4 {
+            color: #2c3e50;
+            margin-bottom: 0.3rem;
+        }
+        
+        .staff-position {
+            color: #e74c3c;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .staff-email {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+            }
+            
+            .staff-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>St. Simon Baptist Church</h1>
+        <p>Welcome to the church where Christ is the head</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="ministries.html">Ministries</a>
+        <a href="event.html">Events</a>
+        <a href="contact.html" class="active">Contact</a>
+         <a href="/membership.html">Membership Class</a>
+    </nav>
+    
+    <main>
+        <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/contact-hero.jpg');">
+            <h1>Contact Our Church</h1>
+            <p>We'd love to hear from you and answer any questions you may have</p>
+        </section>
+        
+        <section class="section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Our Location</h4>
+                            <p>Horton Avenue, Capitol Bye Pass<br>Monrovia, Liberia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone Numbers</h4>
+                            <p>Main Office: <a href="tel:231775484778">231-775-484778</a><br>
+                            Prayer Line: <a href="tel:0888671780">231-888-671-780</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Addresses</h4>
+                            <p>General Inquiries: <a href="mailto:info@stsimonbaptist.org">info@stsimonbaptist.org</a><br>
+                            Prayer Requests: <a href="mailto:prayer@stsimonbaptist.org">prayer@stsimonbaptist.org</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Service Times</h4>
+                            <p>Sunday Worship: 10:30 AM - 12:30 PM<br>
+                            Friday Bible Study: 5:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="office-hours">
+                        <h4>Office Hours</h4>
+                        <table>
+                            <tr>
+                                <td>Monday</td>
+                                <td>9:00 AM - 5:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>9:00 AM - 5:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>9:00 AM - 5:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>9:00 AM - 5:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>9:00 AM - 5:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>9:00 AM - 2:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="prayer">Prayer Request</option>
+                                <option value="visitor">First Time Visitor</option>
+                                <option value="membership">Membership Information</option>
+                                <option value="event">Event Information</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="form-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="church-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.6696896895014!2d-10.800211692224329!3d6.3070549936558225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf09f81d220ea7d5%3A0xc7e9c54cb3b7c7ca!2sSt.%20Simon%20Baptist%20Church!5e0!3m2!1sen!2s!4v1750858899754!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <div class="staff-contact">
+                <h3 class="section-title">Contact Our Staff</h3>
+                <div class="staff-grid">
+                    <div class="staff-card">
+                        <img src="/images/senior pastor.jpg" alt="Rev. S. Rufus W. Reeves" class="staff-img">
+                        <h4>Rev. S. Rufus W. Reeves</h4>
+                        <p class="staff-position">Senior Pastor</p>
+                        <p class="staff-email">pastorreeves@stsimonbaptist.org</p>
+                    </div>
+                    
+                    <div class="staff-card">
+                        <img src="/images/deacon char.jpg" alt="Deacon Fitzgerald T. M. Blago" class="staff-img">
+                        <h4>Deacon Fitzgerald T. M. Blago</h4>
+                        <p class="staff-position">CHAIRMAN, DEACON MINISTRY</p>
+                        <p class="staff-email">blago@stsimonbaptist.org</p>
+                    </div>
+                    
+                    <div class="staff-card">
+                        <img src="/images/place_holder.jpg" alt="Deacon John S. Youboty" class="staff-img">
+                        <h4>Deacon John S. Youboty</h4>
+                        <p class="staff-position">CHAIRMAN, BOARD OF TRUSTEES</p>
+                        <p class="staff-email">john@stsimonbaptist.org</p>
+                    </div>
+                    
+                    <div class="staff-card">
+                        <img src="images/place_holder.jpg" alt="Assocate Pastor" class="staff-img">
+                        <h4>Rev. Alfred N. Wllams</h4>
+                        <p class="staff-position">Assocate Pastor</p>
+                        <p class="staff-email">alfred@stsimonbaptist.org</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="beliefs.html">Our Beliefs</a>
+                <a href="leadership.html">Leadership</a>
+                <a href="give.html">Give Online</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-info">
+                <p>Horton Avenue, Capitol Bye Pass</p>
+                <p>Phone: 231-775-484778 | Email: info@stsimonbaptist.org</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; <span id="current-year"></span> St. Simon Baptist Church. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="/Javascript/main.js"></script>
+    <script>
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // In a real implementation, this would send the form data to a server
+            alert('Thank you for your message! We will respond as soon as possible.');
+            this.reset();
+            
+            // Example of what would happen in a real implementation:
+            // const formData = new FormData(this);
+            // fetch('/submit-contact-form', {
+            //     method: 'POST',
+            //     body: formData
+            // })
+            // .then(response => response.json())
+            // .then(data => {
+            //     alert('Thank you for your message!');
+            //     this.reset();
+            // })
+            // .catch(error => {
+            //     alert('There was an error submitting your form. Please try again.');
+            // });
+        });
+    </script>
+</body>
+</html>

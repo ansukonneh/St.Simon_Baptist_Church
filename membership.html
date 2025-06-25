@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Class - St. Simon Baptist Church</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Additional styles for membership page */
+        .membership-process {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .process-step {
+            flex: 1;
+            min-width: 250px;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: relative;
+            padding-left: 70px;
+        }
+        
+        .step-number {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            background-color: #e74c3c;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .registration-form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .form-row .form-group {
+            flex: 1;
+        }
+        
+        .form-submit {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .form-submit:hover {
+            background-color: #c0392b;
+        }
+        
+        .class-schedule {
+            margin: 3rem 0;
+        }
+        
+        .schedule-item {
+            background-color: white;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .schedule-date {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.2rem;
+        }
+        
+        .schedule-location {
+            color: #666;
+        }
+        
+        .schedule-spots {
+            background-color: #f1f1f1;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            .schedule-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>St. Simon Baptist Church</h1>
+        <p>Welcome to the church where Christ is the head</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="ministries.html">Ministries</a>
+        <a href="event.html">Events</a>
+        <a href="contact.html">Contact</a>
+         <a href="/membership.html">Membership Class</a>
+    </nav>
+    
+    <main>
+        <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/membership-hero.jpg');">
+            <h1>Membership Class</h1>
+            <p>Take the next step in joining our church family</p>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">Become a Member</h2>
+            <div class="welcome-message">
+                <p>Membership at St. Simon Baptist Church represents a commitment to grow together as disciples of Jesus Christ. Our membership class will help you understand our church's history, beliefs, and mission, and how you can be part of what God is doing here.</p>
+            </div>
+            
+            <div class="membership-process">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Attend Class</h3>
+                    <p>Complete our 2-session membership class offered quarterly on Saturday mornings.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Share Your Story</h3>
+                    <p>Meet with a pastor or leader to share your testimony of faith in Christ.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Be Baptized</h3>
+                    <p>If you haven't been baptized by immersion since coming to faith, we'll schedule your baptism.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Be Welcomed</h3>
+                    <p>New members are introduced to the congregation during a Sunday service.</p>
+                </div>
+            </div>
+            
+            <div class="class-schedule">
+                <h3 style="text-align: center; margin-bottom: 1.5rem; color: #2c3e50;">Upcoming Class Dates</h3>
+                
+                <div class="schedule-item">
+                    <div>
+                        <div class="schedule-date">October 15 & 22, 2025</div>
+                        <div class="schedule-location">9:00 AM - 12:00 PM | 4th grade class</div>
+                    </div>
+                    <div class="schedule-spots">Spots Available: 12</div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div>
+                        <div class="schedule-date">January 14 & 21, 2026</div>
+                        <div class="schedule-location">9:00 AM - 12:00 PM | 4th grade class</div>
+                    </div>
+                    <div class="schedule-spots">Spots Available: 15</div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div>
+                        <div class="schedule-date">April 15 & 22, 2026</div>
+                        <div class="schedule-location">9:00 AM - 12:00 PM | 4th grade class</div>
+                    </div>
+                    <div class="schedule-spots">Spots Available: 15</div>
+                </div>
+            </div>
+            
+            <div class="registration-form">
+                <h3 style="text-align: center; margin-bottom: 1.5rem; color: #2c3e50;">Register for Membership Class</h3>
+                
+                <!-- Replace the existing form with this code -->
+<form id="membershipForm" action="https://formsubmit.co/ansukonneh028@gmail.com" method="POST">
+    <!-- Add these hidden inputs for better email formatting -->
+    <input type="hidden" name="_subject" value="New Membership Registration - St. Simon Baptist Church">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://yourchurchwebsite.com/thank-you.html">
+    <input type="hidden" name="_captcha" value="false">
+    
+    <!-- Honey pot field for spam prevention -->
+    <input type="text" name="_honey" style="display:none">
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+    </div>
+    
+    <div class="form-row">
+        <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone *</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="classDate">Preferred Class Date *</label>
+        <select id="classDate" name="classDate" required>
+            <option value="">Select a date</option>
+            <option value="october">October 15 & 22, 2025</option>
+            <option value="january">January 14 & 21, 2026</option>
+            <option value="april">April 15 & 22, 2026</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="members">Number of People Registering *</label>
+        <input type="number" id="members" name="members" min="1" max="5" value="1" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="childcare">Will you need childcare? *</label>
+        <select id="childcare" name="childcare" required>
+            <option value="">Select an option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="story">Briefly share your spiritual journey</label>
+        <textarea id="story" name="story"></textarea>
+    </div>
+    
+    <div class="form-group" style="text-align: center;">
+        <button type="submit" class="form-submit">Submit Registration</button>
+    </div>
+</form>
+            </div>
+            
+            <div class="service-times" style="margin-top: 2rem;">
+                <h3>Have Questions About Membership?</h3>
+                <p>Contact our Membership Coordinator, Sister Angela Brown, for more information.</p>
+                <a href="contact.html" class="cta-button">Contact Us</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="beliefs.html">Our Beliefs</a>
+                <a href="leadership.html">Leadership</a>
+                <a href="give.html">Give Online</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-info">
+                <p>Horton Avenue, Capitol Bye Pass</p>
+                <p>Phone: 231-775-484778 | Email: info@stsimonbaptist.org</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; <span id="current-year"></span> St. Simon Baptist Church. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="/Javascript/main.js"></script>
+    <script>
+        // Form submission handling
+        document.getElementById('membershipForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Form validation
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const classDate = document.getElementById('classDate').value;
+            
+            if (!firstName || !lastName || !email || !classDate) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // In a real implementation, you would send this data to your server
+            alert('Thank you for registering for our membership class! We will contact you with more details soon.');
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
