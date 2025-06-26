@@ -1,9 +1,4 @@
-  // When full page finishes loading
-  window.addEventListener('load', function () {
-    setTimeout(function () {
-      document.body.classList.add('loaded');
-    }, 2000); // Loader duration: 2 seconds
-  });
+
 // Keep your existing footer year code
 document.getElementById('current-year').textContent = new Date().getFullYear();
 document.addEventListener('DOMContentLoaded', function() {
