@@ -12,94 +12,48 @@ body {
     color: #333;
     background-color: #f9f9f9;
 }
-/* Mobile Money Donation Styles */
-.mobile-money-donation {
-    max-width: 800px;
-    margin: 0 auto;
+
+/* Header Styles */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
 }
 
-.donation-method {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    padding: 2rem;
-    margin-bottom: 2rem;
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
-}
-
-.method-icon {
-    font-size: 2rem;
-    color: #e74c3c;
-    padding: 1rem;
-    background-color: #f9f9f9;
-    border-radius: 50%;
-}
-
-.method-info h3 {
-    color: #2c3e50;
-    margin-bottom: 1rem;
-}
-
-.payment-details {
-    background-color: #f1f1f1;
-    padding: 1rem;
-    border-radius: 4px;
-    margin: 1rem 0;
-}
-
-.payment-details p {
+header h1 {
+    font-size: 2.8rem;
     margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.note {
-    font-size: 0.9rem;
-    color: #666;
+header p {
+    font-size: 1.3rem;
     font-style: italic;
 }
 
-@media (max-width: 600px) {
-    .donation-method {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .method-icon {
-        margin-bottom: 1rem;
-    }
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #34495e;
+    padding: 0.8rem 0;
+    flex-wrap: wrap;
 }
 
-@keyframes loaderBounce {
-  0%, 100% {
-    transform: scale(0.3);
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    margin: 0 0.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+nav a:hover {
     background-color: #e74c3c;
-  }
-  50% {
-    transform: scale(1);
-    background-color: #3498db;
-  }
-}
-
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.6;
-  }
-}
-
-/* Hide when loaded */
-body.loaded .loader-wrapper {
-  opacity: 0;
-  visibility: hidden;
-}
-
-/* Prevent scrolling during loading */
-body.loading {
-  overflow: hidden;
+    transform: translateY(-2px);
 }
 
 /* Main Content */
