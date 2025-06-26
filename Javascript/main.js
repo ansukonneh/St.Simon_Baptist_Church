@@ -1,10 +1,9 @@
-
 window.addEventListener('load', function () {
-  console.log("Page fully loaded");
+  // Wait 2 seconds and remove loader
   setTimeout(function () {
-    console.log("Setting loaded class");
     document.body.classList.add('loaded');
-  }, 2000);
+    console.log('Loader removed'); // Check this in browser console
+  }, 2000); // or 1000 for 1 second
 });
 
 // Keep your existing footer year code
