@@ -1,8 +1,10 @@
-// Show preloader while page loads
+
 window.addEventListener('load', function () {
+  console.log("Page fully loaded");
   setTimeout(function () {
+    console.log("Setting loaded class");
     document.body.classList.add('loaded');
-  }, 2000); // Loader duration in milliseconds
+  }, 2000);
 });
 
 // Keep your existing footer year code
