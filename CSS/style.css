@@ -113,10 +113,106 @@ nav a:hover {
         margin-bottom: 1rem;
     }
 }
+/* Modern Loading Animation Styles */
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+.loader {
+  text-align: center;
+}
+
+.loader-inner {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.loader-circle {
+  width: 20px;
+  height: 20px;
+  background-color: #e74c3c;
+  border-radius: 50%;
+  margin: 0 10px;
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+.loader-circle:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.loader-circle:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loader-circle:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.loader-circle:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.loader-circle:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.loader-text {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+    background-color: #3498db;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Hide content until loaded */
+body.loaded .loader-wrapper {
+  opacity: 0;
+  pointer-events: none;
+}
+
+body.loaded .main-content {
+  opacity: 1;
+}
+
+.main-content {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
 
 /* Main Content */
 .hero {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/church-building.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/commununty\ outreach.jpg');
     background-size: cover;
     background-position: center;
     height: 70vh;
