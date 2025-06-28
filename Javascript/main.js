@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Show loading animation while page loads
 document.addEventListener('DOMContentLoaded', function() {
   // Simulate loading delay (remove this in production)
@@ -12,6 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Rest of your existing JavaScript...
 });
+=======
+// Keep your existing footer year code
+document.getElementById('current-year').textContent = new Date().getFullYear();
+>>>>>>> 262155d6e8aee187615f2a745a370f18485f2b55
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu toggle functionality can be added here later
     console.log('Website loaded successfully');
@@ -19,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Current year for footer
     document.getElementById('current-year').textContent = new Date().getFullYear();
 });
+<<<<<<< HEAD
 window.addEventListener('load', () => {
   const loader = document.getElementById('loader');
 
@@ -38,3 +44,5 @@ window.addEventListener('load', () => {
     loader.style.display = 'none';
   }
 });
+=======
+>>>>>>> 262155d6e8aee187615f2a745a370f18485f2b55

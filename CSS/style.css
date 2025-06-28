@@ -55,6 +55,7 @@ nav a:hover {
     background-color: #e74c3c;
     transform: translateY(-2px);
 }
+<<<<<<< HEAD
 /* Mobile Money Donation Styles */
 .mobile-money-donation {
     max-width: 800px;
@@ -209,6 +210,8 @@ body.loaded .main-content {
   opacity: 0;
   transition: opacity 0.5s ease;
 }
+=======
+>>>>>>> 262155d6e8aee187615f2a745a370f18485f2b55
 
 /* Main Content */
 .hero {
