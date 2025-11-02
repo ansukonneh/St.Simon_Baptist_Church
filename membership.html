@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Additional styles for membership page */
         .membership-process {
             display: flex;
             flex-wrap: wrap;
@@ -30,7 +29,7 @@
             position: absolute;
             left: 20px;
             top: 20px;
-            background-color: #e74c3c;
+            background-color: #2c3e50;
             color: white;
             width: 40px;
             height: 40px;
@@ -86,7 +85,7 @@
         }
         
         .form-submit {
-            background-color: #e74c3c;
+            background-color: #2c3e50;
             color: white;
             border: none;
             padding: 1rem 2rem;
@@ -182,28 +181,21 @@
                     <h3>Attend Class</h3>
                     <p>Complete our 2-session membership class offered quarterly on Saturday mornings.</p>
                 </div>
-                
                 <div class="process-step">
                     <div class="step-number">2</div>
-                    <h3>Share Your Story</h3>
-                    <p>Meet with a pastor or leader to share your testimony of faith in Christ.</p>
-                </div>
-                
-                <div class="process-step">
-                    <div class="step-number">3</div>
                     <h3>Be Baptized</h3>
                     <p>If you haven't been baptized by immersion since coming to faith, we'll schedule your baptism.</p>
                 </div>
                 
                 <div class="process-step">
-                    <div class="step-number">4</div>
+                    <div class="step-number">3</div>
                     <h3>Be Welcomed</h3>
                     <p>New members are introduced to the congregation during a Sunday service.</p>
                 </div>
             </div>
             
             <div class="class-schedule">
-                <h3 style="text-align: center; margin-bottom: 1.5rem; color: #2c3e50;">Upcoming Class Dates</h3>
+                <h3 style="text-align: center; margin-bottom: 1.5rem; color: #2c3e50;">Upcoming Class Date</h3>
                 
                 <div class="schedule-item">
                     <div>
@@ -211,22 +203,6 @@
                         <div class="schedule-location">9:00 AM - 12:00 PM | 4th grade class</div>
                     </div>
                     <div class="schedule-spots">Spots Available: 12</div>
-                </div>
-                
-                <div class="schedule-item">
-                    <div>
-                        <div class="schedule-date">January 14 & 21, 2026</div>
-                        <div class="schedule-location">9:00 AM - 12:00 PM | 4th grade class</div>
-                    </div>
-                    <div class="schedule-spots">Spots Available: 15</div>
-                </div>
-                
-                <div class="schedule-item">
-                    <div>
-                        <div class="schedule-date">April 15 & 22, 2026</div>
-                        <div class="schedule-location">9:00 AM - 12:00 PM | 4th grade class</div>
-                    </div>
-                    <div class="schedule-spots">Spots Available: 15</div>
                 </div>
             </div>
             
@@ -267,8 +243,6 @@
         <select id="classDate" name="classDate" required>
             <option value="">Select a date</option>
             <option value="october">October 15 & 22, 2025</option>
-            <option value="january">January 14 & 21, 2026</option>
-            <option value="april">April 15 & 22, 2026</option>
         </select>
     </div>
     
@@ -309,8 +283,6 @@
         <div class="footer-content">
             <div class="footer-links">
                 <a href="about.html">About Us</a>
-                <a href="belief.html">Our Beliefs</a>
-                <a href="leadership.html">Leadership</a>
                 <a href="give.html">Give Online</a>
                 <a href="contact.html">Contact Us</a>
                 <a href="membershp.html">Membership Class</a>
@@ -325,32 +297,8 @@
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
-            <p>&copy; <span id="current-year"></span> St. Simon Baptist Church. All Rights Reserved.</p>
+            <p>&copy; 2025 St. Simon Baptist Church. All Rights Reserved.</p>
         </div>
     </footer>
-    <script src="Javascript/main.js"></script>
-    <script>
-        // Form submission handling
-        document.getElementById('membershipForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Form validation
-            const firstName = document.getElementById('firstName').value;
-            const lastName = document.getElementById('lastName').value;
-            const email = document.getElementById('email').value;
-            const classDate = document.getElementById('classDate').value;
-            
-            if (!firstName || !lastName || !email || !classDate) {
-                alert('Please fill in all required fields.');
-                return;
-            }
-            
-            // In a real implementation, you would send this data to your server
-            alert('Thank you for registering for our membership class! We will contact you with more details soon.');
-            
-            // Reset form
-            this.reset();
-        });
-    </script>
 </body>
 </html>

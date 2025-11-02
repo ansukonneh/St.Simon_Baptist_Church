@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Additional styles specific to Ministries page */
         .ministry-categories {
             display: flex;
             justify-content: center;
@@ -27,7 +26,7 @@
         }
         
         .category-btn:hover, .category-btn.active {
-            background-color: #e74c3c;
+            background-color: #34495e;
             color: white;
         }
         
@@ -66,7 +65,7 @@
         }
         
         .ministry-meta {
-            color: #e74c3c;
+            color: #34495e;
             font-weight: bold;
             margin-bottom: 1rem;
             display: flex;
@@ -91,16 +90,6 @@
             border-radius: 8px;
         }
         
-        @media (max-width: 768px) {
-            .ministries-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .category-btn {
-                padding: 0.6rem 1rem;
-                font-size: 0.9rem;
-            }
-        }
     </style>
 </head>
 <body>
@@ -153,7 +142,7 @@
                 </div>
                 
                 <div class="ministry-card" data-category="youth">
-                    <img src="images/place_holder.jpg" alt="Youth Ministry" class="ministry-img">
+                    <img src="/images/IMG-20251102-WA0071.jpg" alt="Youth Ministry" class="ministry-img">
                     <div class="ministry-content">
                         <h3>Youth of St. Simon</h3>
                         <p class="ministry-meta"><i class="fas fa-clock"></i> Every Second Sunday | <i class="fas fa-map-marker-alt"></i> 4th Grade Class</p>
@@ -207,15 +196,6 @@
                         <span class="age-group">Ages: All of the old folks</span>
                     </div>
                 </div>
-                
-                <div class="ministry-card" data-category="adults">
-                    <img src="images/place_holder.jpg" alt="Prayer Ministry" class="ministry-img">
-                    <div class="ministry-content">
-                        <h3>Prayer Warriors</h3>
-                        <p class="ministry-meta"><i class="fas fa-clock"></i> Wednesdays 6:00 PM | <i class="fas fa-map-marker-alt"></i> Prayer Room</p>
-                        <p>Intercessory prayer team that meets weekly to pray for the needs of the church, community, and world.</p>
-                    </div>
-                </div>
             </div>
             
             <div class="volunteer-cta">
@@ -224,30 +204,12 @@
                 <a href="contact.html" class="cta-button">Volunteer Today</a>
             </div>
         </section>
-        
-        <section class="section" style="background-color: #2c3e50; color: white;">
-            <h2 class="section-title" style="color: white;">Ministry Spotlight</h2>
-            <div class="card-container">
-                <div class="card" style="background-color: #34495e; color: white;">
-                    <img src="images/place_holder.jpg" alt="Community Outreach">
-                    <div class="card-content">
-                        <h3>Church Anniversary Program Program</h3>
-                        <p>Our Anniversary Commitee is currently collecting school supplies and backpacks for underprivileged children in our community. Last year we provided over 200 backpacks filled with supplies!</p>
-                        <p><strong>Drop-off Dates:</strong> July 15-31</p>
-                        <p><strong>Distribution Day:</strong> August 5</p>
-                        <a href="event.html" class="cta-button">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
     
     <footer>
         <div class="footer-content">
             <div class="footer-links">
                 <a href="about.html">About Us</a>
-                <a href="belief.html">Our Beliefs</a>
-                <a href="leadershp.html">Leadership</a>
                 <a href="give.html">Give Online</a>
                 <a href="contact.html">Contact Us</a>
                 <a href="membership.html">Membership Class</a>
@@ -265,24 +227,17 @@
             <p>&copy; <span id="current-year"></span> St. Simon Baptist Church. All Rights Reserved.</p>
         </div>
     </footer>
-    
-   <script src="Javascript/main.js"></script>
     <script>
-        // Ministry category filtering
         document.addEventListener('DOMContentLoaded', function() {
             const categoryBtns = document.querySelectorAll('.category-btn');
             const ministryCards = document.querySelectorAll('.ministry-card');
             
             categoryBtns.forEach(btn => {
                 btn.addEventListener('click', function() {
-                    // Remove active class from all buttons
                     categoryBtns.forEach(b => b.classList.remove('active'));
-                    // Add active class to clicked button
                     this.classList.add('active');
                     
                     const category = this.dataset.category;
-                    
-                    // Filter ministries
                     ministryCards.forEach(card => {
                         if (category === 'all' || card.dataset.category === category) {
                             card.style.display = 'block';

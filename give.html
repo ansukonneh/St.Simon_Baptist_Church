@@ -37,7 +37,7 @@
         
         .method-icon {
             font-size: 2rem;
-            color: #e74c3c;
+            color: #2c3e50;
             margin-right: 1.5rem;
             width: 60px;
             text-align: center;
@@ -48,46 +48,6 @@
             margin-bottom: 0.5rem;
         }
         
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-            color: #2c3e50;
-        }
-        
-        .form-group input, .form-group select {
-            width: 100%;
-            padding: 0.8rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 1rem;
-        }
-        
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
-        
-        .giving-faq {
-            margin-top: 3rem;
-            background-color: #f1f1f1;
-            padding: 2rem;
-            border-radius: 8px;
-        }
-        
-        .faq-item {
-            margin-bottom: 1.5rem;
-        }
-        
-        .faq-item h3 {
-            color: #2c3e50;
-            margin-bottom: 0.5rem;
-        }
         
         @media (max-width: 768px) {
             .giving-container {
@@ -118,7 +78,7 @@
     </nav>
     
     <main>
-        <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/giving.jpg');">
+        <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/IMG-20251102-WA0071.jpg');">
             <h1>Give Online</h1>
             <p>Partner with us in ministry through your faithful giving</p>
         </section>
@@ -133,17 +93,6 @@
             <div class="giving-container">
                 <div class="giving-methods">
                     <h3>Giving Methods</h3>
-                    
-                    <div class="method-card">
-                        <div class="method-icon">
-                            <i class="fas fa-hand-holding-usd"></i>
-                        </div>
-                        <div class="method-info">
-                            <h3>Online Giving</h3>
-                            <p>Give securely through our online portal using credit/debit card or bank account.</p>
-                        </div>
-                    </div>
-                    
                     <div class="method-card">
                         <div class="method-icon">
                             <i class="fas fa-mobile-alt"></i>
@@ -174,59 +123,6 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="giving-form">
-                    <h3>Online Giving Form</h3>
-                    <form id="donation-form">
-                        <div class="form-group">
-                            <label for="amount">Donation Amount ($)</label>
-                            <input type="number" id="amount" name="amount" min="1" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="fund">Select Fund</label>
-                            <select id="fund" name="fund" required>
-                                <option value="">-- Select a Fund --</option>
-                                <option value="general">General Fund</option>
-                                <option value="missions">Missions</option>
-                                <option value="building">Building Fund</option>
-                                <option value="benevolence">Benevolence Fund</option>
-                                <option value="youth">Youth Ministry</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="first-name">First Name</label>
-                                <input type="text" id="first-name" name="first-name" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="last-name">Last Name</label>
-                                <input type="text" id="last-name" name="last-name" required>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="payment-method">Payment Method</label>
-                            <select id="payment-method" name="payment-method" required>
-                                <option value="">-- Select Payment Method --</option>
-                                <option value="credit">Credit Card</option>
-                                <option value="debit">Debit Card</option>
-                                <option value="bank">Bank Account</option>
-                            </select>
-                        </div>
-                        
-                        <button type="submit" class="cta-button" style="width: 100%;">Continue to Payment</button>
-                    </form>
-                </div>
-            </div>
-            <!-- Add this to your existing give.html file -->
 <section class="section">
     <h2 class="section-title">Mobile Money Donations</h2>
     <div class="mobile-money-donation">
@@ -261,30 +157,6 @@
         </div>
     </div>
 </section>
-            
-            <div class="giving-faq">
-                <h3 class="section-title">Giving FAQs</h3>
-                
-                <div class="faq-item">
-                    <h3>Is online giving secure?</h3>
-                    <p>Yes! We use industry-standard encryption technology to protect your information. Your financial data is never stored on our servers.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Will I receive a giving statement?</h3>
-                    <p>Yes, we provide annual giving statements for tax purposes. You can also log in to your account at any time to view your giving history.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Can I set up recurring giving?</h3>
-                    <p>Absolutely. During the giving process, you'll have the option to make your gift recurring (weekly, bi-weekly, or monthly).</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>How much should I give?</h3>
-                    <p>The Bible encourages us to give cheerfully and sacrificially. Many members follow the biblical principle of tithing (giving 10%), but the amount is between you and God.</p>
-                </div>
-            </div>
         </section>
         
     </main>
@@ -293,8 +165,6 @@
         <div class="footer-content">
             <div class="footer-links">
                 <a href="about.html">About Us</a>
-                <a href="belief.html">Our Beliefs</a>
-                <a href="leadershp.html">Leadership</a>
                 <a href="give.html">Give Online</a>
                 <a href="contact.html">Contact Us</a>
                 <a href="membership.html">Membership Class</a>
@@ -312,7 +182,5 @@
             <p>&copy; <span id="current-year"></span> St. Simon Baptist Church. All Rights Reserved.</p>
         </div>
     </footer>
-    
-  <script src="Javascript/main.js"></script>
 </body>
 </html>
